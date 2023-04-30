@@ -1,73 +1,79 @@
+    <!-- Comment --> 
+    <!-- 'ctrl' + '?' (вызывает область для комментариев) -->
+    <!-- 'ctrl' + '+' (увеличивает масштаб приложения)-->
+    <!-- 'lorem'+'tab'(текст 'рыба' ниже используется)-->
+    <!-- 'Alt' + 'z' (код по правой границе, выравнивание) -->
+    <!-- печатаем 'div' потом жмем tab и получаем -> <div></div> -->
+    <!-- печатаем 'div.class-name'     и получаем -> <div class="class-name"></div> -->
+    <!-- печатаем '.class'             и получаем -> <div class="class"></div> (еще быстрее!)-->
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1</title>
+    <title>Lesson 2</title>
 </head>
 <body>
-    <!-- Comment --> 
-    <!-- 'ctrl' + '?' (вызывает область для комментариев) -->
-    <!-- 'ctrl' + '+' (увеличивает масштаб приложения)-->
-    <!-- 'lorem'+'tab'(текст 'рыба' ниже используется)-->
-    <div id="id-name" class="class-name" title="подсказка bro"> 
-         Текст "Рыба" - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam dolore debitis minima deserunt deleniti natus adipisci numquam accusamus necessitatibus ducimus quas doloribus placeat quasi minus voluptate magni, ab dignissimos sint ?
-        <!-- 'Alt' + 'z' (код по правой границе, выравнивание) -->
-    </div>
-    <!-- печатаем 'div' потом жмем tab и получаем -> <div></div> -->
-    <!-- печатаем 'div.class-name'     и получаем -> <div class="class-name"></div> -->
-    <!-- печатаем '.class'             и получаем -> <div class="class"></div> (еще быстрее!)-->
+<div id="top"></div> <!-- ответ на ссылку вверх которая в самом низу -->
+<h2>Hello Alex ! ( заголовок статьи h)</h2> 
 
-    <!-- теги строительные ! -->
-    <div></div>
+        <div><a href="#rew_p1">ссылка Пункт 5</a></li></div>
+        <div>в тексте есть запись "p id = "rew_p1 /p>" на которую ссылается ссылка выше(в коде правее 5 пункта;) </div>
+   <p>
+    (параграф тег "p") Lorem,(Текст рыба :) ) ipsum <span> dolor sit amet consectetur adipisicing elit.</span>(выделить отдельно ! тег /span Строчный ТЕГ) Sint sit voluptates iure quibusdam mollitia quae <mark>  quisquam exercitationem, </mark> ( как span + выделение желтым, СТРОЧНЫЙ ТЕГ как и span) quo commodi praesentium architecto fuga totam esse ea, ullam aut minus ipsam aspernatur?
+   </p>
 
-    <header>голова (верхняя часть сайта)</header>
-    <nav>от слова navigation(дополнительный тег отвечает за навигацию по сайту, меню, хлебные крошки)</nav>
-    <main> тело (уникальная часть страницы)</main>
-    <footer>подвал (нижняя часть сайта, блока)</footer>
-    <!-- эти 3 тега семантические -->
+    <ul>
+        <h4> "Маркированный список, тег ul" (несамостоятельный тег, не используется без li, ul является "коробочкой") </h4>
+        <li>
+            конструкция ul li (li используется внутри ui "тот самый список, карандаши в коробке")
+        </li>
 
-    
-    <!-- теги для контента ! 
-        (все семантические, категории строчные-блочные, с закрывающим элементом и без ) -->
-
-    <!-- Заголовки теги группы 'h' -->
-    <h1>Заголовок h1 (главный заголовок)</h1>
-    (h1 стоит использовать 1 раз)
-    <h2>Заголовок h2</h2>
-    <h3>Заголовок h3</h3>
-    <h4>Заголовок h4</h4>
-    <h5>Заголовок h5</h5>
-    <h6>Заголовок h6</h6>
-
-    <!-- вывод текста -->
+        <li>Пункт 2 </li>
+            <ul> (вложенность ui + li)
+                <li>Подпункт 2.1</li>
+                <li>Подпункт 2.2</li>
+                <li>Подпункт 2.3 (блочный тег)</li>
+            </ul>
+        <li>Пункт 3 </li>
+        <li>И т.д ... </li>
+    </ul>
     <p>
-        (параграф) Семантика   — раздел лингвистики, изучающий смысловое значение единиц языка. В качестве инструмента изучения ..
+        ( параграф )Lorem ipsum dolor <a href="https://translate.google.ru/"> ссылка в тексте ПЕРЕВОДЧИК</a> sit amet consectetur adipisicing elit. Labore quam, enim beatae accusantium voluptate esse. Aliquid, exercitationem natus unde dicta ut fugit beatae corrupti, dolore hic, impedit officiis sapiente voluptatum!
     </p>
+    <ol>
+        <li> Нумерованный список конструкция ol - li (блочный тег)</li>
+        <li>Пункт</li>
+        <li>Пункт </li>
+            <ol>
+                <li>Пункт</li>
+                <li>Пункт</li>
+                <li>Пункт</li>
+            </ol>
+        <li>Пункт </li>
+        <li>Пункт </li><p id = "rew_p1"></p>
+    </ol>
 
-    <h5>-> пример</h5> 
-    <h1>Заголовок статьи </h1>
+    <h3>(тег img без закрывающего тега ;)  </h3>
+    <div>Тег img является уникальным БЛОЧНО-СТРОЧНЫМ тегом ! </div>
+    <img src="img/my_photo.jpg" width="252" height="448" alt="альтернативный текст на случай если фото недоступно(не загрузилось и т.д)">
+    <span>в этом особенность блочно-строчного тега span справа а div снизу </span>
+    <div>Астрахань, фотограф: Alex PodarkiN</div>
+    <div>Ссылка является СТРОЧНЫМ тегом и имеет закрывающий элемент /a</div>
+    <a href="https://t.me/Alex_podarkiN" target="_blank">Телеграмм автора</a>
+    <div>параметр target="_blank" позволяет открыть ссылку в новом окне, обычно используют для ссылки на внешний ресурс, не используют для перехода по сайту. </div>
     <p>
-        (параграф1)Семантика — <span> span это направление лингвистики, /span </span>(тег span позволяет выделять в блочной структуре часть текста, не ломая структуры! ) которое изучает значение слов. Но в маркетинге у семантики другое значение. Это набор ключевых слов и фраз, которые нужны для продвижения сайта 
-    </p>
-
-    <h2>Подзаголовок статьи</h2> 
-    <p>
-        (параграф1)Семантика — <mark> это направление лингвистики, </mark> которое изучает значение слов. Но в маркетинге у семантики другое значение. Это набор ключевых слов и фраз, которые нужны для продвижения сайта.
+        ( параграф )Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam, enim beatae accusantium voluptate esse. Aliquid, exercitationem natus unde dicta ut fugit beatae corrupti, dolore hic, impedit officiis sapiente voluptatum!
     </p>
     <p>
-        (параграф2)Семантика — это направление лингвистики, которое изучает значение слов. Но в маркетинге у семантики другое значение. Это набор ключевых слов и фраз, которые нужны для продвижения сайта.
+        ( параграф )Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quam, enim beatae accusantium voluptate esse. Aliquid, exercitationem natus unde dicta ut fugit beatae corrupti, dolore hic, impedit officiis sapiente voluptatum!
     </p>
-    <!-- все теги до этого были блочными привет -->
+    <!-- перевод строки тег br -->
+    <br>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Soluta, <br>nim eius, <br> in maiores dicta odit vitae molestias?<br></div>
 
-    <!-- еще есть Строчные теги -->
-    <span>это строчный тег (span)</span> 
-    (его ширина равна ширине контента, в отличие от блочных тегов которые занимают всю ширину страницы)
-    <span>ЭТО СТРОЧНЫЙ ТЕГ (span)</span> (ЗАМЕТЬ они идут подряд в ряд (один за другим в отличие от заголовков)!) 
-    
-    
-
-
+    <a href="#top">ВВЕРХ</a>
 </body>
 </html>
