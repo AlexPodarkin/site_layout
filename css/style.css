@@ -1,10 +1,115 @@
-header {
-  background-color: #fff;
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
 }
 
+/* Домашняя работа */
 body {
-  font-size: 20px;
+	background-image: url(../img/fon.png);
+	color: aliceblue;
 }
-body div {
-  font-size: 20px;
+h1 {
+	width: 45%;
+	box-sizing: border-box;
+	/*  margin: 1% 0% 2%; вверх, право-лево, низ */
+	margin: 30px auto 40px;
+	/* padding: 10px; внутренние отступы*/
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 106, 19, 0.753);
+	border-radius: 50px 0;
+	box-shadow: #fa4c21ef 0px 5px 30px 10px;
+	border-bottom: 2px solid #fa4c21ef;
+	text-align: center;
+}
+
+.imagelogo {
+	text-align: center;
+}
+
+.imgalex {
+	background: url(../img/alex.png);
+	background-attachment: fixed;
+}
+
+p {
+	margin: 15px 20px;
+	color: #e9e9e9;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 20px 50px;
+	color: #e9e9e9;
+	border-bottom: 2px solid #fa4c21ef;
+}
+
+a {
+	color: #fa4c21ef;
+	border-bottom: 2px solid #fa4c21ef;
+}
+
+.navigation {
+	margin: 1% 5% 1%;
+	font-size: 16;
+	font-weight: 600;
+}
+
+.nanigation_element {
+	margin: 0.5% 0.5%;
+	color: #fa4c21ef;
+}
+
+h3 {
+	font-size: 25px;
+	margin: 20px 50px;
+	color: #e9e9e9;
+	text-decoration: underline 2px #fa4c21ef;
+}
+
+.top {
+	width: 45%;
+	box-sizing: border-box;
+	/*  margin: 1% 0% 2%; вверх, право-лево, низ */
+	margin: 30px auto 40px;
+	/* padding: 10px; внутренние отступы*/
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(255, 106, 19, 0.753);
+	border-radius: 50px 0;
+	box-shadow: #fa4c21ef 0px 5px 30px 10px;
+	border-bottom: 2px solid #fa4c21ef;
+	text-align: center;
+}
+
+.alex {
+	text-align: end;
+	font-size: 20;
 }
